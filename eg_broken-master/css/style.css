@@ -1,0 +1,154 @@
+/*--Remember the cascade: Later styles override earlier ones and more specific styles override more general ones.--*/
+body {
+    background: #2F3136;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Gentium Book Basic', serif;
+
+}
+
+p {
+    margin-bottom: .67em;
+
+}
+
+nav,
+footer {
+    background-color: #36393F;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0 .3em 0;
+    color: #D0D0D0;
+}
+
+/*-- Main Menu Styles--*/
+nav ul {
+    list-style: none;
+    background: #7289DA;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav a:link,
+nav a:visited {
+    color: #D0D0D0;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+    color: #F0F0F0;
+    text-decoration: underline;
+}
+
+nav a.active {
+    color: #F0F0F0;
+}
+
+/*-- Hero Unit Styles--*/
+header {
+    width: 510px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    margin: auto;
+}
+
+header img {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    margin: auto;
+}
+
+header h1 {
+    margin: 0 auto;
+    padding: 0 auto;
+
+}
+
+.small {
+    margin-top: 1em;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+.dropcap {
+    padding: 5px;
+    position: relative;
+    font-size: 90px;
+    line-height: 60px;
+    float: left;
+}
+
+/*-- Article Styles--*/
+article {
+    padding-top: 20px;
+    width: 768px;
+    font-size: 18px;
+    line-height: 1.3;
+    margin: auto;
+}
+
+article figure {
+    border: 3px solid grey;
+    background: #36393F;
+    padding: 20px;
+    float: right;
+    width: 39%;
+    margin: 0 0 1.25em 1.25em;
+    padding: 20px;
+}
+
+article figcaption {
+    font-family: cursive;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.pagination {
+    background: #43B581;
+    padding: 10px;
+    color: #fff;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 96%;
+    display: flex;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+
+a.button {
+    border: 1px solid #fff;
+    padding: .4em 1em .4em 1em;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 200px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 80%;
+}
+
+a.button:hover,
+a.button:active {
+    border: 1px solid #7289DA;
+    text-decoration: none;
+    color: #7289DA;
+}
+
+/*-- changes header and article width on small screens --*/
+@media screen and (max-width: 768px) {
+    header {
+        width: 96%;
+    }
+
+    article {
+        width: 96%;
+    }
+}
